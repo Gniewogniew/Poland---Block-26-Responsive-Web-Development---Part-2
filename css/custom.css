@@ -49,7 +49,6 @@ section {
     color:#dedeff;
 }
 #section1 p{
-	margin-left: 10px;
     margin-right: 10px;
 }
 #section2 {
@@ -99,18 +98,19 @@ section {
 	background-color: #fff;
     color:#444;
 }
-#section4 img{
-	float:left;
-	margin-right: 80px;
-	margin-bottom: 20px;
-}
 #section4 p{
 	text-align: justify;
     margin-top: 20px;
     font-size: 16px;
     margin-right: 20px;
 }
+#section4 img {
+    float: left;
+    margin-right: 20px;;
+	}
+
 #section4 h3{
+	text-align: center;
 	text-decoration: underline;
 	text-underline-position: under;
 }
@@ -158,4 +158,51 @@ footer .nav>li>a:hover {
 }
 footer li{
 	padding: 2px;
+}
+.container {
+    width: 100%;
+}
+@media screen and (min-width: 300px) and (max-width: 414px){
+	.v-center{
+	margin-left: 2%;
+    margin-right: 2%;
+	}
+	#section4 img {
+    display: block;
+    margin: 0 auto;
+    float: none;
+	}
+	#section4 h3 {
+    margin-top: 10px;
+	}
+	.row{
+	text-align: center;
+	}
+	section {
+    padding-top: 35px;
+    padding-bottom: 30px;
+    }
+    #section5 .container {
+    margin-top: 20px;
+	}
+	footer h4 {
+    font-size: 20px;
+    text-decoration: underline;
+	}
+	#section4 p {
+    margin-left: 15px;
+	}
+	footer .nav>li>a {
+    font-size: 14px;
+    padding: 3px;
+    color: #fff;
+	}
+}
+@media screen and (min-width: 766px) and (max-width: 1024px){
+	.col-md-8{
+		margin-right: 100px;
+	}
+	#section4 img {
+    margin-bottom: 80px;
+}
 }
